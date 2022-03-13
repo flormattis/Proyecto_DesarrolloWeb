@@ -73,6 +73,11 @@ html{
     max-width: 80px;
 }
 
+@keyframes text-enter{
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+
 nav ul .section-block{
     color: #999997;
 }
@@ -112,9 +117,6 @@ nav ul .section-block{
 .portfolio{
     grid-area: main;
     width: 100%;
-
-    
-
 }
 
 .presentation {
@@ -123,6 +125,11 @@ nav ul .section-block{
     text-align: center;
     padding-top: 2vh;
     padding-bottom: 1vh;
+    animation-name: text-enter;
+    animation-iteration-count: initial;
+    animation-timing-function: ease;
+    animation-duration: 10s;
+    animation-delay: 0s;
 
 }
 
@@ -133,6 +140,10 @@ width: 100%;
 
 .sect-img {
     width: 100%;
+}
+
+.sect-img:hover {
+    transform: translateY(-5px);
 }
 
 .perfil-img{
