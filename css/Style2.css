@@ -22,7 +22,7 @@ html{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
-    grid-template-areas: "nav" "main" "footer";
+    grid-template-areas: "navbar2" "main" "footer";
     justify-content:center;
     
 }
@@ -46,9 +46,11 @@ html{
     grid-template-rows: auto;
     justify-content: center;
     width: 90vw;
-    grid-template-areas: "perfil-img-contain" "paragraph" "btn-2" ;
+    grid-template-areas: "perfil-img-contain" "paragraph" "buttons" ;
     padding-left: 5vw;
 }   
+
+
 
 
 /*Nav*/
@@ -62,7 +64,7 @@ html{
     display: flex;
     flex-direction: column;
     align-items: center;
-    grid-area: nav;
+    grid-area: navbar2;
     text-transform: uppercase;  
     
 }
@@ -179,10 +181,12 @@ figure img{
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    grid-area: buttons;
 }
 
 .paragraph{
     font-size: 1.2rem;
+    grid-area: paragraph;
 }
 
 /*footer*/
@@ -292,6 +296,8 @@ figure img{
         grid-template-rows: 1fr 1fr; 
         grid-column-gap: 10px ;
         align-items: start; 
+        grid-template-areas: "perfil-img-contain" "paragraph" "paragraph"
+                                "." "buttons" ".";
     } 
     
         
@@ -299,6 +305,7 @@ figure img{
     .perfil-img-contain{
         grid-column: 1/2;
         grid-row: 1/2;
+        grid-area: perfil-img-contain;
     }
     
     .paragraph{
@@ -311,6 +318,7 @@ figure img{
         grid-row: 2/3;
         justify-content: space-between;
         flex-wrap: nowrap;
+        height: auto;
     }
 
 }
@@ -318,12 +326,11 @@ figure img{
 @media only screen and (min-width: 1200px){
     
     .grid{
-        display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-areas: "nav nav" 
+        grid-template-areas: "navbar2 navbar2" 
                             "main main" 
                          "footer footer";  
-        grid-row: 1/2;
+        /*grid-row: 1/3;*/
     }
     
     .grid-figures{
@@ -333,7 +340,8 @@ figure img{
 
     .pie{
         flex-direction: row;
-        justify-content: start;
+        width: 100%;
+        justify-content: space-between;
         
         
     }
