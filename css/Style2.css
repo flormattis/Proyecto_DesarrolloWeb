@@ -40,7 +40,7 @@ html{
 }
 
 
-.grid-about{
+/*.grid-about{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
@@ -48,7 +48,7 @@ html{
     width: 90vw;
     grid-template-areas: "perfil-img-contain" "paragraph" "buttons" ;
     padding-left: 5vw;
-}   
+} */  
 
 
 
@@ -93,19 +93,14 @@ nav ul .section-block{
         margin-bottom: 10px;
     }
 
-        nav ul li a{
-            color: black;
-        }
+        /*#navBar li a:hover{
+            color: #A14D9D !important;
+        }*/
 
-        nav ul li a:hover{
-            color: #A14D9D;
-        }
-
-            nav a {
-                text-decoration: none;
-            }
-
-
+        
+.bgGrey{
+    background-color: rgba(153, 153, 151, 0.2);
+}
 
 /*Main*/
 
@@ -117,13 +112,12 @@ nav ul .section-block{
 }
 
 .portfolio{
-    grid-area: main;
-    width: 100%;
+    grid-area: main
 }
 
 .presentation {
     font-size: 2rem;
-    /*max-width: 90vw;*/
+    font-weight: 600;
     text-align: center;
     padding-top: 2vh;
     padding-bottom: 1vh;
@@ -189,6 +183,37 @@ figure img{
     grid-area: paragraph;
 }
 
+.textForm{
+    font-size: 1.7rem;
+}
+.formTitle{
+    font-size: 4rem;
+    font-weight: 600;
+    color: #999997;
+}
+
+.projectTitle{
+    font-family: Permanent Marker;
+    font-size: 4rem;
+    color: #A14D9D;
+}
+
+h3{
+    color: #999997;
+}
+
+h2{
+    color: #A14D9D;
+    font-weight: 600;
+    font-size: 2.2rem;
+    padding-top: 2.2rem;
+}
+
+.secondColor{
+    color: #A14D9D;
+}
+
+
 /*footer*/
 
     footer{
@@ -207,6 +232,7 @@ figure img{
                 margin-right: 10px;
                 margin-bottom: 10px;
                 text-align: center;
+                font-weight: 600;
             }
 
             .pie-icon{
@@ -291,14 +317,14 @@ figure img{
     }
 
 
-    .grid-about{
+    /*.grid-about{
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr; 
         grid-column-gap: 10px ;
         align-items: start; 
         grid-template-areas: "perfil-img-contain" "paragraph" "paragraph"
                                 "." "buttons" ".";
-    } 
+    } */
     
         
     
