@@ -213,6 +213,30 @@ h2{
     color: #A14D9D;
 }
 
+.bgPrimary{
+    background-color:#A14D9D ;
+
+}
+
+.textWhite{
+    color: white;
+}
+
+.spaceBetween{
+    justify-content: space-between;
+}
+
+.justifyEnd{
+    justify-content: end;
+}
+
+.justifyStart{
+    justify-content: start;
+}
+
+.formSize{
+    width: 50%;
+}
 
 /*footer*/
 
@@ -243,6 +267,16 @@ h2{
                 footer div a{
                     text-decoration: none;
                 }
+
+@media only screen and (max-width: 500px) {
+    .formTitle{
+        font-size: 3rem;
+    }
+
+    .formSize{
+        width: 75%;
+    }
+}
 
 @media only screen and (min-width: 500px){
     nav ul li{
