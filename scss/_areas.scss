@@ -1,0 +1,73 @@
+//General
+.grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "navbar2" "main" "footer";
+    justify-content:center;
+}
+
+//Index Body
+.portfolio{
+    grid-area: main
+}
+
+.gallery{
+    width: 100%;
+    
+    }
+
+
+main{
+    div{
+        h1{
+            font-size: 4rem;
+            font-weight: 600;
+            text-align: center;
+            padding-top: 2vh;
+            padding-bottom: 1vh;
+            animation-name: text-enter;
+            animation-iteration-count: initial;
+            animation-timing-function: ease;
+            animation-duration: 10s;
+            animation-delay: 0s;
+        }
+    }
+}
+
+.sect-img {
+    width: 100%;
+        &:hover {
+            transform: translateY(-5px);
+        }
+}
+
+//footer
+.pie{
+    grid-area: footer;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px auto;
+    padding: 20px;
+    justify-content: space-between;
+
+        div{ 
+            a{
+            text-decoration: none;
+            }
+        }
+}
+
+.pie-text{
+    font-size: 1.2rem;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.pie-icon{
+    width: 25px;
+    margin-right: 10px;
+    }

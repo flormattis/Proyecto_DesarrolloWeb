@@ -1,31 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Assistant&family=Catamaran&family=Inter&family=Nunito+Sans:wght@400;700&family=Permanent+Marker&family=Source+Sans+3:wght@400;600&display=swap');
 
-*{
-    margin: 0;
-    padding: 0;
-    font-family: 'Nunito Sans', sans-serif;
-    box-sizing: border-box;
-}
-
-html{
-    font-size: 62.5%;
-    }
-    
-    body{
-        overflow-x: hidden;
-        background-image: url(../img/fondo.png);
-        background-attachment: fixed;
-    }
     
 /*Grid principal*/
-.grid{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    grid-template-areas: "navbar2" "main" "footer";
-    justify-content:center;
-    
-}
 
 .grid-figures{
     
@@ -40,48 +16,11 @@ html{
 }
  
 /*Nav*/
-.menu ul{
-    display: flex;
-}
-
-.menu{
-    background-color: rgba(153, 153, 151, 0.2);
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    grid-area: navbar2;
-    text-transform: uppercase;  
-    
-}
 
 @keyframes text-enter{
     from{opacity: 0;}
     to{opacity: 1;}
 }
-
-nav ul .section-block{
-    color: #999997;
-}
-
-    nav ul li{
-        list-style: none;
-        font-size: 1rem;
-        text-transform: uppercase;
-        font-weight: 550;
-        margin-right: 10px;
-        margin-bottom: 10px;
-    }
-
-        /*#navBar li a:hover{
-            color: #A14D9D !important;
-        }*/
-
-        
-.bgGrey{
-    background-color: rgba(153, 153, 151, 0.2);
-}
-
 /*Main*/
 
 .section{
@@ -89,37 +28,6 @@ nav ul .section-block{
     color: #999997;
     font-weight: 600;
     padding-top: 8px;
-}
-
-.portfolio{
-    grid-area: main
-}
-
-.presentation {
-    font-size: 2rem;
-    font-weight: 600;
-    text-align: center;
-    padding-top: 2vh;
-    padding-bottom: 1vh;
-    animation-name: text-enter;
-    animation-iteration-count: initial;
-    animation-timing-function: ease;
-    animation-duration: 10s;
-    animation-delay: 0s;
-
-}
-
-.gallery{
-width: 100%;
-
-}
-
-.sect-img {
-    width: 100%;
-}
-
-.sect-img:hover {
-    transform: translateY(-5px);
 }
 
 .perfil-img{
@@ -214,36 +122,6 @@ h2{
 .formSize{
     width: 50%;
 }
-
-/*footer*/
-
-    footer{
-        margin: 20px auto;
-        padding: 20px;
-    }
-        .pie{
-            grid-area: footer;
-            display: flex;
-            align-items: center;
-            flex-direction: column;
-        }
-
-            .pie-text{
-                font-size: 1.2rem;
-                margin-right: 10px;
-                margin-bottom: 10px;
-                text-align: center;
-                font-weight: 600;
-            }
-
-            .pie-icon{
-                width: 25px;
-                margin-right: 10px;
-                }
-
-                footer div a{
-                    text-decoration: none;
-                }
 
 @media only screen and (max-width: 500px) {
     .formTitle{
