@@ -40,19 +40,6 @@ html{
 }
 
 
-/*.grid-about{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    justify-content: center;
-    width: 90vw;
-    grid-template-areas: "perfil-img-contain" "paragraph" "buttons" ;
-    padding-left: 5vw;
-} */  
-
-
-
-
 /*Nav*/
 .menu ul{
     display: flex;
@@ -92,10 +79,6 @@ nav ul .section-block{
         margin-right: 10px;
         margin-bottom: 10px;
     }
-
-        /*#navBar li a:hover{
-            color: #A14D9D !important;
-        }*/
 
         
 .bgGrey{
@@ -146,9 +129,6 @@ width: 100%;
     width: 100%;
     padding-top: 5px;
     
-}
-.text-center{
-    text-align: center;
 }
 
 figure img{ 
