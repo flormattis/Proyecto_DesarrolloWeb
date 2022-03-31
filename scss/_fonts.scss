@@ -2,3 +2,61 @@
 
 $fontMain: 'Nunito Sans', sans-serif;
 $fontSecondary: 'Permanent Marker', cursive;
+
+//Texto de contenido
+main{
+    article{
+        p{
+            b{
+                color:$mainColor;
+                a{
+                    color:$mainColor;
+                }
+            }
+        }
+    }
+}
+
+#linkRef{
+    color:$mainColor;
+}
+
+.paragraph{
+    font-size: 1.2rem;
+    grid-area: paragraph;
+}
+
+.textForm{
+    font-size: 1.7rem;
+}
+.formTitle{
+    font-size: 4rem;
+    font-weight: 600;
+    color: #999997;
+}
+
+.projectTitle{
+    font-family: Permanent Marker;
+    font-size: 4rem;
+    color: #A14D9D;
+}
+
+h3{
+    color: #999997;
+}
+
+h2{
+    color: #A14D9D;
+    font-weight: 600;
+    font-size: 2.2rem;
+    padding-top: 2.2rem;
+}
+
+.textWhite{
+    color: white;
+}
+
+.textWhite-b{
+    @extend .textWhite;
+    font-weight: 600;
+}

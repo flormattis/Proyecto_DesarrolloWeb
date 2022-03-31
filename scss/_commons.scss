@@ -18,9 +18,52 @@ html{
 
 }
 
-//variables
+//Variables
 
 //colores
 $mainColor: #A14D9D;
 $secondaryColor: #999997;
 $secondaryColor--alfa: rgba(153, 153, 151, 0.2);
+
+$paleta: (
+    'PrimaryColor': #a14d9d,
+    'SecondColor': #dadada,
+    'PrimaryColorLight': #d8c5e5,
+    'FirstAlt': #fff2a9,
+    'SecondAlt': #436c9d,
+    'SecondAltLight': #82a4d5,);
+
+//botones
+.btn-1{
+    background-color: black;
+        color: white;
+        font-size: 1.2rem;
+        padding: 4px 6px;
+        margin: 10px 5px 10px 5px;
+        text-decoration: none;
+        font-weight: 400;
+        &:hover{
+            color: map-get($map: $paleta, $key:'SecondColor' ) ;
+            background-color:$mainColor;
+        }
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    grid-area: buttons;
+}
+
+//Display Flex
+.spaceBetween{
+    justify-content: space-between;
+}
+
+.justifyEnd{
+    justify-content: end;
+}
+
+.justifyStart{
+    justify-content: start;
+}

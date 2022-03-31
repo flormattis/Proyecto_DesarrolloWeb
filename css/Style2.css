@@ -1,53 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Assistant&family=Catamaran&family=Inter&family=Nunito+Sans:wght@400;700&family=Permanent+Marker&family=Source+Sans+3:wght@400;600&display=swap');
-
-    
-/*Grid principal*/
-
-.grid-figures{
-    
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    justify-content:center;
-    width: 90vw;
-    margin: auto;
-    grid-column-gap: 2px;
-    grid-row-gap: 2px;
-}
-<<<<<<< HEAD
-
-
-=======
- 
->>>>>>> 60f4cdbc3833670fe78a4b52792fb3939abbb522
 /*Nav*/
 
 @keyframes text-enter{
     from{opacity: 0;}
     to{opacity: 1;}
 }
-<<<<<<< HEAD
-
-nav ul .section-block{
-    color: #999997;
-}
-
-    nav ul li{
-        list-style: none;
-        font-size: 1rem;
-        text-transform: uppercase;
-        font-weight: 550;
-        margin-right: 10px;
-        margin-bottom: 10px;
-    }
-
         
-.bgGrey{
-    background-color: rgba(153, 153, 151, 0.2);
-}
-
-=======
->>>>>>> 60f4cdbc3833670fe78a4b52792fb3939abbb522
 /*Main*/
 
 .section{
@@ -55,99 +12,6 @@ nav ul .section-block{
     color: #999997;
     font-weight: 600;
     padding-top: 8px;
-}
-
-.perfil-img{
-    width: 100%;
-    padding-top: 5px;
-    
-}
-
-figure img{ 
-    margin:auto;
-    width: 100%;
-    justify-content:center;
-    
-}
-
-.btn-1{
-    background-color: black;
-        color: white;
-        font-size: 1rem;
-        padding: 4px 6px;
-        margin: 10px 5px 10px 5px;
-        text-decoration: none;
-}
-
-.btn-1:hover{
-    background-color: #A14D9D;
-}
-
-.buttons{
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    grid-area: buttons;
-}
-
-.paragraph{
-    font-size: 1.2rem;
-    grid-area: paragraph;
-}
-
-.textForm{
-    font-size: 1.7rem;
-}
-.formTitle{
-    font-size: 4rem;
-    font-weight: 600;
-    color: #999997;
-}
-
-.projectTitle{
-    font-family: Permanent Marker;
-    font-size: 4rem;
-    color: #A14D9D;
-}
-
-h3{
-    color: #999997;
-}
-
-h2{
-    color: #A14D9D;
-    font-weight: 600;
-    font-size: 2.2rem;
-    padding-top: 2.2rem;
-}
-
-.secondColor{
-    color: #A14D9D;
-}
-
-.bgPrimary{
-    background-color:#A14D9D ;
-
-}
-
-.textWhite{
-    color: white;
-}
-
-.spaceBetween{
-    justify-content: space-between;
-}
-
-.justifyEnd{
-    justify-content: end;
-}
-
-.justifyStart{
-    justify-content: start;
-}
-
-.formSize{
-    width: 50%;
 }
 
 @media only screen and (max-width: 500px) {

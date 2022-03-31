@@ -12,6 +12,73 @@ html {
     background-image: url(../img/fondo.png);
     background-attachment: fixed; }
 
+.btn-1, .btnForm {
+  background-color: black;
+  color: white;
+  font-size: 1.2rem;
+  padding: 4px 6px;
+  margin: 10px 5px 10px 5px;
+  text-decoration: none;
+  font-weight: 400; }
+  .btn-1:hover, .btnForm:hover {
+    color: #dadada;
+    background-color: #A14D9D; }
+
+.buttons {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  grid-area: buttons; }
+
+.spaceBetween {
+  justify-content: space-between; }
+
+.justifyEnd {
+  justify-content: end; }
+
+.justifyStart {
+  justify-content: start; }
+
+main article p b {
+  color: #A14D9D; }
+  main article p b a {
+    color: #A14D9D; }
+
+#linkRef {
+  color: #A14D9D; }
+
+.paragraph {
+  font-size: 1.2rem;
+  grid-area: paragraph; }
+
+.textForm {
+  font-size: 1.7rem; }
+
+.formTitle {
+  font-size: 4rem;
+  font-weight: 600;
+  color: #999997; }
+
+.projectTitle {
+  font-family: Permanent Marker;
+  font-size: 4rem;
+  color: #A14D9D; }
+
+h3 {
+  color: #999997; }
+
+h2 {
+  color: #A14D9D;
+  font-weight: 600;
+  font-size: 2.2rem;
+  padding-top: 2.2rem; }
+
+.textWhite, .textWhite-b {
+  color: white; }
+
+.textWhite-b {
+  font-weight: 600; }
+
 #navBar {
   background-color: rgba(153, 153, 151, 0.2);
   width: 100%;
@@ -37,6 +104,16 @@ html {
   grid-template-areas: "navbar2" "main" "footer";
   justify-content: center; }
 
+.grid-figures {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  justify-content: center;
+  width: 90vw;
+  margin: auto;
+  grid-column-gap: 2px;
+  grid-row-gap: 2px; }
+
 .portfolio {
   grid-area: main; }
 
@@ -56,9 +133,24 @@ main div h1 {
   animation-delay: 0s; }
 
 .sect-img {
-  width: 100%; }
+  width: 100%;
+  margin: auto;
+  justify-content: center; }
   .sect-img:hover {
     transform: translateY(-5px); }
+
+.formSize {
+  width: 50%; }
+
+.bgPrimary {
+  background-color: #A14D9D; }
+
+.perfil-img {
+  width: 100%;
+  padding-top: 5px; }
+
+.btnForm {
+  font-size: 2rem; }
 
 .pie {
   grid-area: footer;

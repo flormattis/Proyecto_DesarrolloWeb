@@ -8,6 +8,19 @@
 }
 
 //Index Body
+
+.grid-figures{
+    
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    justify-content:center;
+    width: 90vw;
+    margin: auto;
+    grid-column-gap: 2px;
+    grid-row-gap: 2px;
+}
+
 .portfolio{
     grid-area: main
 }
@@ -37,9 +50,34 @@ main{
 
 .sect-img {
     width: 100%;
+    margin:auto;
+    justify-content:center;
         &:hover {
             transform: translateY(-5px);
         }
+}
+
+//Formulario
+.formSize{
+    width: 50%;
+}
+
+//Main Projects
+
+.bgPrimary{
+    background-color:$mainColor;
+}
+
+//About
+
+.perfil-img{
+    width: 100%;
+    padding-top: 5px;    
+}
+
+.btnForm{
+    @extend .btn-1;
+    font-size: 2rem;
 }
 
 //footer
