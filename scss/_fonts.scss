@@ -22,7 +22,7 @@ main{
 }
 
 .paragraph{
-    font-size: 1.2rem;
+    font-size: 1.6rem;
     grid-area: paragraph;
 }
 
@@ -52,6 +52,14 @@ h2{
     padding-top: 2.2rem;
 }
 
+main{
+    div{
+        h1{
+            color: map-get($map: $paleta, $key:'PrimaryColor' ) ;
+        }
+    }
+}
+
 .textWhite{
     color: white;
 }
@@ -59,4 +67,11 @@ h2{
 .textWhite-b{
     @extend .textWhite;
     font-weight: 600;
+}
+
+.section{
+    font-family: 'Nunito Sans', sans-serif;
+    color: #999997;
+    font-weight: 600;
+    padding-top: 8px;
 }

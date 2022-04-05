@@ -9,8 +9,10 @@ html {
   font-size: 62.5%; }
   html body {
     overflow-x: hidden;
-    background-image: url(../img/fondo.png);
     background-attachment: fixed; }
+
+.sliderBg {
+  background-color: #d8c5e5; }
 
 .btn-1, .btnForm {
   background-color: black;
@@ -19,7 +21,8 @@ html {
   padding: 4px 6px;
   margin: 10px 5px 10px 5px;
   text-decoration: none;
-  font-weight: 400; }
+  font-weight: 400;
+  width: 150px; }
   .btn-1:hover, .btnForm:hover {
     color: #dadada;
     background-color: #A14D9D; }
@@ -48,7 +51,7 @@ main article p b {
   color: #A14D9D; }
 
 .paragraph {
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   grid-area: paragraph; }
 
 .textForm {
@@ -73,14 +76,30 @@ h2 {
   font-size: 2.2rem;
   padding-top: 2.2rem; }
 
+main div h1 {
+  color: #a14d9d; }
+
 .textWhite, .textWhite-b {
   color: white; }
 
 .textWhite-b {
   font-weight: 600; }
 
+.section {
+  font-family: 'Nunito Sans', sans-serif;
+  color: #999997;
+  font-weight: 600;
+  padding-top: 8px; }
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "navbar2" "main" "footer";
+  justify-content: center; }
+
 #navBar {
-  background-color: rgba(153, 153, 151, 0.2);
+  background-color: white;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -96,13 +115,6 @@ h2 {
     margin-bottom: 10px; }
     #navBar ul li a:hover {
       color: #A14D9D !important; }
-
-.grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto;
-  grid-template-areas: "navbar2" "main" "footer";
-  justify-content: center; }
 
 .grid-figures {
   display: grid;
@@ -139,11 +151,20 @@ main div h1 {
   .sect-img:hover {
     transform: translateY(-5px); }
 
+@keyframes text-enter {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
 .formSize {
   width: 50%; }
 
 .bgPrimary {
   background-color: #A14D9D; }
+
+#carousel-char {
+  background-color: #d8c5e5; }
 
 .perfil-img {
   width: 100%;
@@ -173,3 +194,82 @@ main div h1 {
 .pie-icon {
   width: 25px;
   margin-right: 10px; }
+
+@media only screen and (max-width: 500px) {
+  .formTitle {
+    font-size: 3rem; }
+  .formSize {
+    width: 75%; }
+  .btn-1, .btnForm {
+    font-size: 1.5rem; } }
+
+@media only screen and (min-width: 500px) {
+  nav ul li {
+    font-size: 1.8rem; }
+  .presentation {
+    font-size: 2.8rem;
+    padding-top: 2vh;
+    padding-bottom: 2vh; }
+  .pie-text {
+    font-size: 1.5rem;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    text-align: center; }
+  .pie-icon {
+    width: 35px;
+    margin-right: 10px; }
+  .section {
+    font-size: 2.7rem; }
+  .paragraph {
+    font-size: 1.6rem;
+    padding-top: 10px; }
+  .btn-1, .btnForm {
+    font-size: 1.8rem; } }
+
+@media only screen and (min-width: 768px) {
+  .grid-figures {
+    grid-template-columns: 1fr 1fr; }
+  .presentation {
+    font-size: 4rem; }
+  .menu {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 15px 15px 10px 15px;
+    align-items: center; }
+  .paragraph {
+    grid-column: 2/4;
+    grid-row: 1/2; }
+  .buttons {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    height: auto; }
+  #carouselExampleControls {
+    width: 100%;
+    justify-content: center; }
+  #carousel-char {
+    width: 90%; } }
+
+@media only screen and (min-width: 1200px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "navbar2 navbar2"  "main main"  "footer footer"; }
+  .grid-figures {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 5px; }
+  .pie {
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between; }
+  .pie-text {
+    font-size: 1.5rem; }
+  .paragraph {
+    grid-column: 2/4;
+    grid-row: 1/2; }
+  .buttons {
+    grid-column: 2/3;
+    grid-row: 2/3; } }
+
+#carousel-char {
+  width: 75%; }

@@ -12,7 +12,6 @@ html{
     
     body{
         overflow-x: hidden;
-        background-image: url(../img/fondo.png);
         background-attachment: fixed;
     }
 
@@ -33,6 +32,11 @@ $paleta: (
     'SecondAlt': #436c9d,
     'SecondAltLight': #82a4d5,);
 
+
+.sliderBg{
+    background-color: map-get($map: $paleta, $key:'PrimaryColorLight' ) ;
+}
+
 //botones
 .btn-1{
     background-color: black;
@@ -42,6 +46,7 @@ $paleta: (
         margin: 10px 5px 10px 5px;
         text-decoration: none;
         font-weight: 400;
+        width: 150px;
         &:hover{
             color: map-get($map: $paleta, $key:'SecondColor' ) ;
             background-color:$mainColor;
@@ -67,3 +72,5 @@ $paleta: (
 .justifyStart{
     justify-content: start;
 }
+
+
