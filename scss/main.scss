@@ -63,6 +63,11 @@
         grid-template-columns: 1fr 1fr ;   
     }
 
+    .grid-figures2{
+        grid-template-columns: 1fr 1fr ; 
+        grid-column-gap: 8px;   
+    }
+
     .presentation {
         font-size: 4rem;   
     }
@@ -112,6 +117,11 @@
     .grid-figures{
         grid-template-columns: 1fr 1fr 1fr ;
         grid-column-gap: 5px;   
+    }
+
+    .grid-figures2{
+        grid-template-columns: 1fr 1fr ;
+        grid-column-gap: 8px;   
     }
 
     .pie{

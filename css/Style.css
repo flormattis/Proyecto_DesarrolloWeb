@@ -87,9 +87,19 @@ main div h1 {
 
 .section {
   font-family: 'Nunito Sans', sans-serif;
-  color: #999997;
+  color: #a14d9d;
   font-weight: 600;
   padding-top: 8px; }
+
+.imgTitle {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 2.5em;
+  font-weight: 600;
+  text-align: center; }
+
+.imgDescription {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 1.8em; }
 
 .grid {
   display: grid;
@@ -148,14 +158,56 @@ main div h1 {
   width: 100%;
   margin: auto;
   justify-content: center; }
-  .sect-img:hover {
-    transform: translateY(-5px); }
 
 @keyframes text-enter {
   from {
     opacity: 0; }
   to {
     opacity: 1; } }
+
+.imgOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.25s; }
+
+.imgOverlay--blur {
+  backdrop-filter: blur(5px); }
+
+.imgOverlay > * {
+  transform: translateY(20px);
+  transition: transform 0.25s; }
+
+.imgOverlay:hover {
+  opacity: 1; }
+
+.imgOverlay:hover > * {
+  transform: translateY(0); }
+
+.imgGallery {
+  position: relative; }
+
+.gallery2 {
+  width: 100%; }
+
+.grid-figures2 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  justify-content: center;
+  width: 90vw;
+  margin: auto;
+  grid-column-gap: 2px;
+  grid-row-gap: 2px; }
 
 .formSize {
   width: 50%; }
@@ -229,6 +281,9 @@ main div h1 {
 @media only screen and (min-width: 768px) {
   .grid-figures {
     grid-template-columns: 1fr 1fr; }
+  .grid-figures2 {
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 8px; }
   .presentation {
     font-size: 4rem; }
   .menu {
@@ -258,6 +313,9 @@ main div h1 {
   .grid-figures {
     grid-template-columns: 1fr 1fr 1fr;
     grid-column-gap: 5px; }
+  .grid-figures2 {
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 8px; }
   .pie {
     flex-direction: row;
     width: 100%;

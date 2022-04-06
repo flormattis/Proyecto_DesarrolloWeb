@@ -71,7 +71,19 @@ main{
 
 .section{
     font-family: 'Nunito Sans', sans-serif;
-    color: #999997;
+    color: map-get($map: $paleta, $key: 'PrimaryColor');
     font-weight: 600;
     padding-top: 8px;
+}
+
+.imgTitle{
+    font-family: $fontMain;
+    font-size: 2.5em;
+    font-weight: 600;
+    text-align: center;
+}
+
+.imgDescription{
+    font-family: $fontMain;
+    font-size: 1.8em;
 }
