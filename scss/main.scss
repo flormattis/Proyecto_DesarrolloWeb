@@ -1,4 +1,4 @@
-//imports
+//Imports
 
 @import "_commons";
 @import "_fonts";
@@ -109,9 +109,10 @@
     
     .grid{
         grid-template-columns: 1fr 1fr;
-        grid-template-areas: "navbar2 navbar2" 
-                            "main main" 
-                         "footer footer";  
+        grid-template-areas: "header header" 
+                            "navbar2 navbar2" 
+                             "main main" 
+                            "footer footer";  
     }
     
     .grid-figures{
@@ -143,8 +144,10 @@
         grid-column: 2/3;
         grid-row: 2/3;
     }
+
+    #carousel-char{
+        width: 50% ;
+    }
 }
 
-#carousel-char{
-    width: 75% ;
-}
+

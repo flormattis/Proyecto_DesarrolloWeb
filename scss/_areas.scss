@@ -3,11 +3,15 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
-    grid-template-areas: "navbar2" "main" "footer";
+    grid-template-areas: "header" "navbar2" "main" "footer";
     justify-content:center;
 }
 
 //NavBar
+
+.headerIndex{
+    grid-area: header;
+}
 #navBar{
     background-color: white;
     width: 100%;
@@ -101,10 +105,6 @@ main{
     transition: opacity 0.25s;
 }
 
-.imgOverlay--blur {
-    backdrop-filter: blur(5px);
-}
-
 .imgOverlay > * {
     transform: translateY(20px);
     transition: transform 0.25s;
@@ -120,6 +120,26 @@ main{
 
 .imgGallery{
     position: relative;
+}
+
+section{
+    section{
+        figure{
+            a{
+                img{
+                    border-radius: 8px;
+                }
+            }
+        }
+    }
+}
+
+figure{
+    a{
+        div{
+            border-radius: 8px;
+        }
+    }
 }
 
 //Category Grid
@@ -156,6 +176,10 @@ main{
     background-color: map-get($map: $paleta, $key:'PrimaryColorLight' ) ;
 }
 
+.projectNav{
+    font-size: 1.5rem;
+}
+
 //About
 
 .perfil-img{
@@ -166,6 +190,10 @@ main{
 .btnForm{
     @extend .btn-1;
     font-size: 2rem;
+}
+
+.perfil-img{
+    border-radius: 8px;
 }
 
 //footer
