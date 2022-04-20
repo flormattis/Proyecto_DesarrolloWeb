@@ -142,6 +142,11 @@ figure{
     }
 }
 
+figure{
+    border-radius: 8px;
+}                     
+
+
 //Category Grid
 .gallery2{
     width: 100%;
@@ -178,6 +183,10 @@ figure{
 
 .projectNav{
     font-size: 1.5rem;
+}
+
+#imgUnit{
+    width: 100%;
 }
 
 //About

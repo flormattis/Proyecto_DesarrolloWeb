@@ -217,6 +217,9 @@ section section figure a img {
 figure a div {
   border-radius: 8px; }
 
+figure {
+  border-radius: 8px; }
+
 .gallery2 {
   width: 100%; }
 
@@ -241,6 +244,9 @@ figure a div {
 
 .projectNav {
   font-size: 1.5rem; }
+
+#imgUnit {
+  width: 100%; }
 
 .perfil-img {
   width: 100%;
@@ -280,7 +286,11 @@ figure a div {
   .formSize {
     width: 75%; }
   .btn-1, .btnForm {
-    font-size: 1.5rem; } }
+    font-size: 1.5rem; }
+  iframe {
+    width: 100%; }
+  .projectNav {
+    font-size: 1.1rem; } }
 
 @media only screen and (min-width: 500px) {
   nav ul li {
@@ -331,7 +341,9 @@ figure a div {
     width: 100%;
     justify-content: center; }
   #carousel-char {
-    width: 90%; } }
+    width: 90%; }
+  #imgUnit {
+    width: 75%; } }
 
 @media only screen and (min-width: 1200px) {
   .grid {
@@ -356,4 +368,6 @@ figure a div {
     grid-column: 2/3;
     grid-row: 2/3; }
   #carousel-char {
+    width: 50%; }
+  #imgUnit {
     width: 50%; } }
