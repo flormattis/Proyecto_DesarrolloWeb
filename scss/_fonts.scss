@@ -87,3 +87,15 @@ main{
     font-family: $fontMain;
     font-size: 1.8em;
 }
+
+.lgText{
+    font-size: 4rem;
+    color: map-get($map: $paleta, $key: 'PrimaryColor');
+    font-family: $fontMain;
+    font-weight: 600;
+}
+
+.lgText-secondary{
+    font-size: 2rem;
+    color: black
+}

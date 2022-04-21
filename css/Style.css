@@ -28,6 +28,18 @@ html {
     color: #dadada;
     background-color: #A14D9D; }
 
+.btn-2 {
+  background-color: #A14D9D;
+  color: white;
+  font-size: 1.6rem;
+  padding: 4px 6px;
+  margin: 10px 5px 10px 5px;
+  text-decoration: none;
+  font-weight: 400; }
+  .btn-2:hover {
+    color: white;
+    background-color: black; }
+
 .buttons {
   display: flex;
   justify-content: space-evenly;
@@ -115,6 +127,16 @@ main div h1 {
 .imgDescription {
   font-family: "Nunito Sans", sans-serif;
   font-size: 1.8em; }
+
+.lgText {
+  font-size: 4rem;
+  color: #a14d9d;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 600; }
+
+.lgText-secondary {
+  font-size: 2rem;
+  color: black; }
 
 .grid {
   display: grid;
