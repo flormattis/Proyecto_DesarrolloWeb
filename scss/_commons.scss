@@ -27,7 +27,6 @@ $paleta: (
     background-color: map-get($map: $paleta, $key:'PrimaryColorLight' ) ;
 }
 
-
 html{
     font-size: 62.5%;
     
@@ -39,7 +38,6 @@ html{
     }
 
 }
-
 
 //botones
 .btn-1{
@@ -68,8 +66,7 @@ html{
         &:hover{
             color: white ;
             background-color:black;
-            }
-            
+            }           
 }
 
 .buttons{

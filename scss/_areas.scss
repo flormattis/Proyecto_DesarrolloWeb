@@ -12,6 +12,7 @@
 .headerIndex{
     grid-area: header;
 }
+
 #navBar{
     background-color: white;
     width: 100%;
@@ -36,6 +37,7 @@
             }       
         }
     }   
+ 
     
 //Index Body
 
@@ -58,8 +60,7 @@
 .gallery{
     width: 100%;
     
-    }
-
+}
 
 main{
     div{
@@ -192,8 +193,7 @@ figure{
 //About
 
 .perfil-img{
-    width: 100%;
-    padding-top: 5px;    
+    width: 100%;   
 }
 
 .btnForm{
